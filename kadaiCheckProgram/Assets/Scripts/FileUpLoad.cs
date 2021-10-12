@@ -28,7 +28,7 @@ public class FileUpLoad : MonoBehaviour
             Debug.Log("スクリプトURLが記述されていません。");
             return "スクリプトURLが記述されていません。";
         }
-        StartCoroutine(Post());
+        //StartCoroutine(Post());
         return "送信処理開始";
     }
 

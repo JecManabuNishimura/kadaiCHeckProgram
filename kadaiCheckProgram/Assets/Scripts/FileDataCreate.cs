@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class FileDataCreate : MonoBehaviour
 {
@@ -27,8 +28,35 @@ public class FileDataCreate : MonoBehaviour
     [SerializeField]
     private OptionCheck optionData;
 
+    [SerializeField]
+    private GameObject errorDataPrefab;
+
+    [SerializeField]
+    private GameObject parentErrorList;
+
+    [SerializeField]
+    private Button SendButton;
+
+    private Queue<GameObject> errorList = new Queue<GameObject>();
+
+    private string[] classNameList =
+    {
+        "1CU1","1cu1",
+        "1CU2","1cu2",
+        "1CU3","1cu3",
+        "2CU1","2cu1",
+        "2CU2","2cu2",
+        "2CU3","2cu3",
+        "3CU1","3cu1",
+        "3CU2","3cu2",
+        "3CU3","3cu3",
+    };
+
+
     private void Start()
     {
+        CreateJson.ResetData();
+        SendButton.interactable = false;
         rCSV = GetComponent<ReadCSV>();
         try
         {
@@ -70,7 +98,17 @@ public class FileDataCreate : MonoBehaviour
 
     public void StartCreate()
     {
-        if(optionData.TaskName == "")
+        // リストの初期化
+        if(errorList.Count != 0)
+		{
+            foreach(var d in errorList)
+			{
+                Destroy(d.gameObject);
+			}
+            errorList.Clear();
+		}
+        CreateJson.ResetData();
+        if (optionData.TaskName == "")
         {
             CreateText.SendText("<color=red>課題名が設定されていません</color>");
             return;
@@ -83,13 +121,23 @@ public class FileDataCreate : MonoBehaviour
         CreateText.SendText("処理開始");
 
         if (!ReadFile())
+		{
             // 読み込み失敗
+            CreateText.SendText("<color=red>読み込みに失敗しました</color>");
             return;
+        }
+            
 
         CreateFileListData();
+        CreateErrorList();
         CreateCSVData();
         CreateJson.WriteJson();
+        SendButton.interactable = true;
+        CreateText.SendText("ファイル読み込み完了");
+    }
 
+    public void StartSendDatae()
+	{
         CreateText.SendText("サーバーデータ送信開始");
         fu.SetGASURL(scriptPath.text);
         CreateJson.GetJsonData();
@@ -166,18 +214,30 @@ public class FileDataCreate : MonoBehaviour
             {
                 string[] ldata = temp1.Split(',');
                 // ファイルが存在していた場合は次へ
-                if(CreateJson.CheckData(ldata[2],ldata[3]))
+                // エラーとして登録されているデータもスキップ
+                if (CreateJson.CheckErrerData(ldata[2], ldata[3]) || CreateJson.CheckData(ldata[2],ldata[3]))
                 {
                     continue;
                 }
+
                 lessonClass tmp = new lessonClass();
                 tmp.className = ldata[0];
                 tmp.date = ldata[1];
                 tmp.name = ldata[2];
                 tmp.fileName = ldata[3];
 
-                CreateJson.SetDataList(tmp);
-                csvDataList.Add(temp1);
+                CheckData(tmp, out lessonErrorClass eFlag);
+
+                // 一つでも問題のファイルがある場合はエラーとする
+                if(!eFlag.classNameFlag || !eFlag.dateFlag || !eFlag.nameFlag || !eFlag.fileNameFlag)
+				{
+                    CreateJson.SetErrorDataList(tmp,eFlag);
+                }
+                else
+				{
+                    CreateJson.SetDataList(tmp);
+                    csvDataList.Add(temp1);
+                }
             }
         }
         if (rCSV.GetChallengeFilePath() != "")
@@ -188,6 +248,61 @@ public class FileDataCreate : MonoBehaviour
                 CreateJson.SetDataList(tmp);
             }
         }
+    }
+
+    void CreateErrorList()
+	{
+        DataClass dc = CreateJson.GetErrorDataList();
+        if (dc.lessonClasses.Count != 0)
+		{
+            int num = 1;
+            foreach(var d  in dc.lessonClasses)
+			{
+                GameObject tmp = Instantiate(errorDataPrefab);
+                tmp.GetComponent<ErrerList>().SetErrerData(num,d.date,d.className,d.name,d.fileName);
+                tmp.GetComponent<ErrerList>().SetErrorColor(dc.LEClasses[num - 1]);
+                errorList.Enqueue(tmp);
+                tmp.transform.parent = parentErrorList.transform;
+                num++;
+            }
+        }
+	}
+
+    void CheckData(lessonClass data, out lessonErrorClass eDataFlag)
+	{
+        eDataFlag = new lessonErrorClass();
+        eDataFlag.classNameFlag = false;
+        eDataFlag.dateFlag = false;
+        eDataFlag.nameFlag = false;
+        eDataFlag.fileNameFlag = false;
+        
+        // クラス名チェック
+        foreach (var d in classNameList)
+		{
+            if (data.className == d)
+			{
+                eDataFlag.classNameFlag = true;
+                break;
+			}
+        }
+        
+        // 日付フォルダーチェック
+        string tmpDate = data.date.Replace("_", "");
+        if (int.TryParse(tmpDate, out int result))
+        {
+            eDataFlag.dateFlag = true;
+        }
+
+        // 名前の空白チェック
+        if (!data.name.Contains(" ") && !data.name.Contains("　"))
+		{
+            eDataFlag.nameFlag = true;
+		}
+        
+        if(data.fileName.Contains(optionData.TaskName))
+		{
+            eDataFlag.fileNameFlag = true;
+		}
     }
 
     void CreateCSVData()

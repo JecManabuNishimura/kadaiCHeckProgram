@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 659634337e2aac740b105ef21fac3906
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1596882771256355947
+    second: gahag-0047428805_0
+  - first:
+      213: 4103676694404907480
+    second: gahag-0047428805_1
+  - first:
+      213: 2808099244785033082
+    second: gahag-0047428805_2
+  - first:
+      213: -7623983721152314311
+    second: gahag-0047428805_3
+  - first:
+      213: -5105987549252054347
+    second: gahag-0047428805_4
+  - first:
+      213: 3624360928699082377
+    second: gahag-0047428805_5
+  - first:
+      213: 3842356561208067046
+    second: gahag-0047428805_6
+  - first:
+      213: -5730789905975949723
+    second: gahag-0047428805_7
+  - first:
+      213: 6414419028808818707
+    second: gahag-0047428805_8
+  - first:
+      213: -8992295473649716990
+    second: gahag-0047428805_9
+  - first:
+      213: -799186559055043450
+    second: gahag-0047428805_10
+  - first:
+      213: 5695626189496549775
+    second: gahag-0047428805_11
+  - first:
+      213: 892402448852468436
+    second: gahag-0047428805_12
+  - first:
+      213: -309164877845695819
+    second: gahag-0047428805_13
+  - first:
+      213: -8478683586688913022
+    second: gahag-0047428805_14
+  - first:
+      213: -1974752482150893848
+    second: gahag-0047428805_15
+  - first:
+      213: 4519595204277182255
+    second: gahag-0047428805_16
+  - first:
+      213: -575801572567133579
+    second: gahag-0047428805_17
+  - first:
+      213: -1986487071290517731
+    second: gahag-0047428805_18
+  - first:
+      213: 8464057974025500789
+    second: gahag-0047428805_19
+  - first:
+      213: 3603152942232804600
+    second: gahag-0047428805_20
+  - first:
+      213: -7302708411526044351
+    second: gahag-0047428805_21
+  - first:
+      213: 2082529744116282978
+    second: gahag-0047428805_22
+  - first:
+      213: 4753743478488931887
+    second: gahag-0047428805_23
+  - first:
+      213: 8229053509703112332
+    second: gahag-0047428805_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gahag-0047428805_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2182
+        width: 1383
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c2da87b64492610800000000000000
+      internalID: 1596882771256355947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_1
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2146
+        width: 481
+        height: 489
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1cd0b163033f830800000000000000
+      internalID: 4103676694404907480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_2
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 2146
+        width: 482
+        height: 489
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f547b926f58f620800000000000000
+      internalID: 2808099244785033082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_3
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 2203
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9340b5ff23b223690800000000000000
+      internalID: -7623983721152314311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_4
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 2203
+        width: 391
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2934b6063e329b0800000000000000
+      internalID: -5105987549252054347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1636
+        width: 1383
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986e9ecdf015c4230800000000000000
+      internalID: 3624360928699082377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_6
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1610
+        width: 481
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3c23b4feac25530800000000000000
+      internalID: 3842356561208067046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_7
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1610
+        width: 482
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566c8eb81f42870b0800000000000000
+      internalID: -5730789905975949723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_8
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 1661
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310e7a42f18940950800000000000000
+      internalID: 6414419028808818707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_9
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 1661
+        width: 391
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20171c1f8e2f43380800000000000000
+      internalID: -8992295473649716990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1091
+        width: 1383
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684e14e0f08b8e4f0800000000000000
+      internalID: -799186559055043450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_11
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1072
+        width: 481
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f818a56b7ddea0f40800000000000000
+      internalID: 5695626189496549775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_12
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1072
+        width: 482
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d24a809c43726c00800000000000000
+      internalID: 892402448852468436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_13
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 1119
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2fafe7e20a5bbf0800000000000000
+      internalID: -309164877845695819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_14
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 1120
+        width: 391
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 0, z: 28, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281f87c233aa55a80800000000000000
+      internalID: -8478683586688913022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 1383
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6331684154894e0800000000000000
+      internalID: -1974752482150893848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_16
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 535
+        width: 481
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f108774e3d8be30800000000000000
+      internalID: 4519595204277182255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_17
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 535
+        width: 482
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572560e35875208f0800000000000000
+      internalID: -575801572567133579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_18
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 577
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1792d498849e64e0800000000000000
+      internalID: -1986487071290517731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_19
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 577
+        width: 391
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5783a1402ef567570800000000000000
+      internalID: 8464057974025500789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1383
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc9039b288f00230800000000000000
+      internalID: 3603152942232804600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_21
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 0
+        width: 481
+        height: 479
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145abb0246197aa90800000000000000
+      internalID: -7302708411526044351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_22
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 0
+        width: 482
+        height: 479
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2667c30c4c1a6ec10800000000000000
+      internalID: 2082529744116282978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_23
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 35
+        width: 392
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e99acd180b8f140800000000000000
+      internalID: 4753743478488931887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gahag-0047428805_24
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 35
+        width: 391
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8619835198733270800000000000000
+      internalID: 8229053509703112332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

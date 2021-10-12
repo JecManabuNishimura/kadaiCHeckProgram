@@ -9,6 +9,8 @@ public class OptionCheck : MonoBehaviour
     private InputField taskName;
     [SerializeField]
     private InputField className;
+    [SerializeField]
+    private InputField dayName;
 
     [SerializeField]
     private Toggle fileToggle;
@@ -25,8 +27,9 @@ public class OptionCheck : MonoBehaviour
     public string ClassName { get => className.text; set => className.text = value; }
     public string TaskName { get => taskName.text; set => taskName.text = value; }
     public bool FolderToggle { get => folderToggle.isOn; set => folderToggle.isOn = value; }
+	public string DayName { get => dayName.text; set => dayName.text = value; }
 
-    public string GetTaskVersion()
+	public string GetTaskVersion()
     {
         if(FileToggle == true)
         {

@@ -12,6 +12,20 @@ public class CreateJson : MonoBehaviour
     static DataClass dataList = new DataClass();
     static RespoinseData jsonData = new RespoinseData();
 
+    static DataClass errordataList = new DataClass();
+    public static void ResetData()
+	{
+        dataList.lessonClasses.Clear();
+        dataList.LEClasses.Clear();
+        errordataList.lessonClasses.Clear();
+        errordataList.LEClasses.Clear();
+
+    }
+    public static void SetErrorDataList(lessonClass data, lessonErrorClass lec)
+    {
+        errordataList.lessonClasses.Add(data);
+        errordataList.LEClasses.Add(lec);
+    }
     public static void SetDataList(lessonClass data)
     {
         dataList.lessonClasses.Add(data);
@@ -19,6 +33,12 @@ public class CreateJson : MonoBehaviour
     public static void SetDataList(ChallengeData data)
     {
         dataList.challengeDatas.Add(data);
+    }
+
+    public static DataClass GetErrorDataList()
+	{
+        return errordataList;
+
     }
 
     public static void SetDataList(string className,string taskname)
@@ -40,6 +60,21 @@ public class CreateJson : MonoBehaviour
             return false;
         }
         
+        return true;
+    }
+    public static bool CheckErrerData(string name, string fileName)
+    {
+        try
+        {
+            var data = errordataList.lessonClasses.Find(x => x.fileName == fileName && x.name == name).fileName;
+            if (data == "")
+                return false;
+        }
+        catch
+        {
+            return false;
+        }
+
         return true;
     }
 
