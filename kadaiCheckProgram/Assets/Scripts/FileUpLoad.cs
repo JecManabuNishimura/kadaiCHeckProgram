@@ -28,23 +28,25 @@ public class FileUpLoad : MonoBehaviour
             Debug.Log("スクリプトURLが記述されていません。");
             return "スクリプトURLが記述されていません。";
         }
-        //StartCoroutine(Post());
+        StartCoroutine(Post());
         return "送信処理開始";
     }
 
 
     public IEnumerator Post()
     {
+        CreateText.SendText("送信中");
         var request = new UnityWebRequest(URL, "POST");
         byte[] bodyRaw = Encoding.UTF8.GetBytes(CreateJson.GetJsonData());
         //byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
         request.uploadHandler = (UploadHandler)new UploadHandlerRaw(bodyRaw);
         request.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+        CreateText.SendText("リクエスト送信");
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
-        
-        
 
+
+        CreateText.SendText("送信チェック");
         if (request.isHttpError || request.isNetworkError)
         {
             UnityEngine.Debug.Log(request.error);
@@ -52,6 +54,7 @@ public class FileUpLoad : MonoBehaviour
         }
         else
         {
+            CreateText.SendText("受信完了");
             result = request.downloadHandler.text;
             var response = JsonUtility.FromJson<ResponseData>(result);
             CreateText.SendText(response.message);
